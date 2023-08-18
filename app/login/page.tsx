@@ -5,6 +5,7 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 
 interface initStateProps {
   name: string;
@@ -25,18 +26,19 @@ export default function page() {
   const onSubmit = (event: FormEvent) => {
     event.preventDefault();
 
-    axios
-      .post("/api/register", state)
-      .then(() => {
+    signIn("credentials", {
+      ...state,
+      redirect: false,
+    }).then((callback) => {
+      if (callback?.ok) {
         router.refresh();
-      })
-      .then(() => {
-        setTimeout(() => {
-          router.push("/login");
-        }, 2500);
-      })
-      .catch((err: any) => {})
-      .finally(() => {});
+      }
+
+      if (callback?.error) {
+        throw new Error("Wrong Credentials");
+      }
+    });
+    router.push("/");
   };
 
   function handleChange(event: any) {
@@ -61,7 +63,7 @@ export default function page() {
         />
         <label className="text-white ">Password</label>
         <Input
-          type="text"
+          type="password"
           name="password"
           placeholder="Password"
           id="password"
