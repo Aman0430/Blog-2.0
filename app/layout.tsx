@@ -1,10 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Navbar from "./components/navbar/Navbar";
 import getCurrUser from "./actions/getCurrentUser";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Blog 2.0",
@@ -19,7 +16,7 @@ export default async function RootLayout({
   const currentUser = await getCurrUser();
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`bg-slate-950`}>
         <Navbar currentUser={currentUser} />
         {children}
       </body>
