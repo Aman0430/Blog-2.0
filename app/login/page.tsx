@@ -38,7 +38,7 @@ export default function page() {
         throw new Error("Wrong Credentials");
       }
     });
-    router.push("/");
+    router.push("/home");
   };
 
   function handleChange(event: any) {

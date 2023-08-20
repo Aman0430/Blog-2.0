@@ -33,8 +33,7 @@ export default function page() {
       .then(() => {
         // toast.success('Created successfully')
         router.refresh();
-        router.push("/");
-        // router.push('/')
+        router.push("/home");
       })
 
       .catch((err) => {
