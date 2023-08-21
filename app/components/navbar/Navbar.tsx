@@ -23,7 +23,7 @@ export default function Navbar({ currentUser }: UserMenuProps) {
 
         <div className="flex gap-6 text-yellow-200 font-semibold font-mono">
           <Link href="/home">Home</Link>
-          <Link href="/create">Create</Link>
+          {currentUser ? <Link href="/create">Create</Link> : <div></div>}
           {currentUser ? (
             <button
               className="rounded-md bg-blue-700 hover:bg-blue-800 px-2"

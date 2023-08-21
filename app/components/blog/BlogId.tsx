@@ -98,12 +98,12 @@ export default function BlogId({
       <div className="flex gap-6 text-slate-500 items-center justify-start">
         <button
           onClick={() => setOnActive(!onActive)}
-          className=" px-4 py-1 bg-yellow-800 text-black rounded-full hover:bg-yellow-900 font-medium shadow-sm hover:scale-95 shadow-black"
+          className=" px-4 py-1 bg-yellow-600 text-white rounded-full hover:bg-yellow-900 font-medium shadow-sm hover:scale-95 shadow-black"
         >
           Edit
         </button>
         <button
-          className="bg-red-800 font-medium shadow-sm hover:scale-95 rounded-full px-4 py-1 hover:bg-red-900 shadow-black"
+          className="bg-red-800 font-medium shadow-sm hover:scale-95 rounded-full px-4 py-1 hover:bg-red-900 shadow-black text-white"
           onClick={onDelete}
         >
           Delete
@@ -139,7 +139,7 @@ export default function BlogId({
             <div></div>
             <button
               disabled={isLoading}
-              className="uppercase p-2 hover:bg-green-900 bg-green-800 rounded-full w-24 shadow-sm shadow-black hover:scale-95"
+              className="uppercase text-white p-2 hover:bg-green-900 bg-green-800 rounded-full w-24 shadow-sm shadow-black hover:scale-95"
               type="submit"
             >
               Submit
