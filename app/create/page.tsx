@@ -3,8 +3,8 @@
 import React, { ChangeEvent, FormEvent, useMemo, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import Input from "../components/inputs/Input";
-import ImageUpload from "../components/inputs/ImageUpload";
+import ImageUpload from "@/app/components/Inputs/ImageUpload";
+import Input from "@/app/components/Inputs/Input";
 
 interface InitalStateProps {
   name?: string;

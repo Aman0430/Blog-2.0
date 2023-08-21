@@ -1,7 +1,7 @@
 import React from "react";
 import getCurrUser from "../actions/getCurrentUser";
 import getBlogs from "../actions/getBlogs";
-import SingleBlog from "../components/blog/SingleBlog";
+import SingleBlog from "../components/Blog/SingleBlog";
 
 export default async function Home() {
   const currentUser = await getCurrUser();

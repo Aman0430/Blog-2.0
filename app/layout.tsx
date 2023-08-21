@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import getCurrUser from "./actions/getCurrentUser";
 
 export const metadata: Metadata = {
