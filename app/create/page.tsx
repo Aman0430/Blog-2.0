@@ -21,6 +21,7 @@ const initialState: InitalStateProps = {
 export default function Page() {
   const [state, setState] = useState(initialState);
   const [isLoading, setIsLoading] = useState(false);
+  //router instance
   const router = useRouter();
 
   const onSubmit = (event: FormEvent) => {
