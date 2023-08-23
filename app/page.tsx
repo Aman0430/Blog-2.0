@@ -29,7 +29,7 @@ export default async function Home() {
           </Link>
         )}
       </div>
-      {/* components deleted */}
+      {/* Components deleted */}
     </main>
   );
 }

@@ -3,8 +3,8 @@
 import axios from "axios";
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import Image from "next/image";
-import ImageUpload from "@/app/components/Inputs/ImageUpload";
-import Input from "@/app/components/Inputs/Input";
+import ImageUpload from "@/app/Components/Inputs/ImageUpload";
+import Input from "@/app/Components/Inputs/Input";
 import { useRouter } from "next/navigation";
 
 interface BlogProps {

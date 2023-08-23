@@ -1,6 +1,6 @@
 import getCurrUser from "@/app/actions/getCurrentUser";
 import getBlogById from "@/app/actions/getBlogById";
-import BlogId from "@/app/components/Blog/BlogId";
+import BlogId from "@/app/Components/Blog/BlogId";
 
 interface IParams {
   blogId: string;
