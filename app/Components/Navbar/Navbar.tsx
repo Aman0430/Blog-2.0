@@ -12,7 +12,7 @@ interface UserMenuProps {
 export default function Navbar({ currentUser }: UserMenuProps) {
   return (
     <header className="bg-slate-950">
-      <nav className="bg-slate-900 fixed w-full rounded-b-3xl font-mono text-white flex justify-between px-4 py-6 shadow-xl z-20 shadow-black">
+      <nav className="bg-slate-900 w-full fixed rounded-b-3xl font-mono text-white flex justify-between px-4 py-6 shadow-md z-20 shadow-black">
         <div>
           |
           <span className="text-red-600 cursor-pointer hover:text-red-500">

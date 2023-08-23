@@ -83,7 +83,7 @@ export default function BlogId({
 
   return (
     <div className="w-[700px] text-slate-400 font-mono mx-auto py-16 bg-slate-800 px-12 flex flex-col gap-8 z-10 rounded-b-[120px] mb-16">
-      <div className="flex flex-col border-b-2">
+      <div className="flex mt-4 flex-col border-b-2">
         <span>{name}</span>
       </div>
 
